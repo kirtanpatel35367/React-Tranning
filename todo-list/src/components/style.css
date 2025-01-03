@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.todoBody {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    box-shadow: 3px 4px 10px rgb(182, 103, 75);
+    border-radius: 5px;
+    background-color: coral;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: ghostwhite;
+    overflow: hidden;
+}
+
+
+.todoBody::-webkit-scrollbar {
+    display: none;
+}
+
+.todoBody {
+    scrollbar-width: none;
+}
+
+.addItem {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+
+#listBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 20px;
+    margin: 0;
+}
+
+
+#listBody ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#listBody ul li {
+    text-align: left;
+}
+
+
+.item {
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(247, 245, 245, 0.807);
+    color: black;
+}
+.item svg {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.item svg:hover {
+    color: red;
+}
+
+input[type="checkbox"] {
+    zoom: 1.5;
+}
+
+/*Styling For AddItem*/
+.addForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vh;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.addForm input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: larger;
+    border-radius: 4px;
+}
+.addForm svg{
+    font-size: x-large;
+    cursor: pointer;
+}
+.addForm svg:hover{
+    color: green;
+}
+
+.buttons{
+    margin: 10px;
+}
+.button{
+    padding: 4px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#searchItem,
+#addItem{
+    text-align: center;
+}
