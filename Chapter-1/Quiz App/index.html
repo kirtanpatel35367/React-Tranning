@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="quiz_body">
+        <div class="questionBlock">
+            <header>
+                <h1>Quiz Web App</h1>
+                <div class="timer">
+                    <div class="time_text">Time Left</div>
+                    <div id="time">5</div>
+                </div>
+            </header>
+            <section>
+                    <p id="questionTitle">Select Correct Options From Below Answers</p>
+                
+                <div class="options_list">
+                    <ul>
+                        <li>
+                            <input type="radio" class="answer" name="quiz-answer" id="option_a">
+                            <label for="option_a" id="text_a">Option A</label>
+                        </li>
+                        <li>
+                            <input type="radio" class="answer" name="quiz-answer" id="option_b">
+                            <label for="option_b" id="text_b">Option B</label>
+                        </li>
+                        <li>
+                            <input type="radio" class="answer" name="quiz-answer" id="option_c">
+                            <label for="option_a" id="text_c">Option C</label>
+                        </li>
+                        <li>
+                            <input type="radio" class="answer" name="quiz-answer" id="option_d">
+                            <label for="option_a" id="text_d">Option D</label>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <footer>
+                <div class="total_ques">
+                    <span>
+                        <p id="questionNumber">1</p>out of<p id="totalQuestion">6</p>
+                    </span>
+                    <button id="next_button">Submit</button>
+                </div>
+            </footer>
+        </div>
+
+        <div id="result">
+            <div class="complete_text">
+                You Have Completed Quiz
+            </div>
+            <div class="score_text">
+                <span>You Got <p id="totalScore">3</p> Out of <p id="totalQuestion">6</p></span>
+                <div>
+                    <Button id="restart">Try Again</Button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
