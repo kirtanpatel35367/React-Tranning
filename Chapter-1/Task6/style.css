@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counterBody{
+    align-items: center;   
+    text-align: center;
+    font-size: medium;
+}
+.b1{
+    padding: 5px 30px; 
+    font-size: medium;
+    cursor: pointer;
+    font-family:'Times New Roman', Times, serif;
+    transition: all 0.3 1s ease-in-out;
+}
+
+.b1:hover{
+    padding: 6px 32px;
+}
+
+#p1{
+    font-size: 30px;
+}
+
+#increment{
+    background-color: green;
+    box-shadow: 2px 2px 3px green;
+    border-radius: 3px;
+}
+#decrement{
+    background-color: red;
+    box-shadow: 2px 2px 3px red;
+    border-radius: 3px;
+}
+
+#reset{
+    background-color: skyblue;
+    box-shadow: 2px 2px 3px skyblue;
+    border-radius: 3px;
+}
+
+
+
