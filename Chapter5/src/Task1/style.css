@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(86, 155, 193);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+nav .navlink{
+    text-decoration: none;    
+    color: black;
+}
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+.buttonList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonList button,
+.LoginButton,
+button{
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px 5px;
+    font-size: medium;
+    padding: 8px;
+    border: 2px solid skyblue;
+    border-radius: 4px;
+    color: rgb(60, 78, 85);
+}
+.buttonList button:hover{
+    background-color: rgb(165, 199, 251);
+}
+.home,
+.about,
+.contact,
+.user,
+.product,
+.productinfo,
+.error
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.5s ease-in-out;
+
+}
+
+.itemList{
+    animation: fadeIn 0.5s ease-in-out;
+}
+.userRegister {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.userRegister div {
+    margin-bottom: 15px;
+}
+
+.userRegister label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.userRegister input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.userRegister input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.userRegister button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.userRegister button {
+    background-color: #508bcf;
+}
+
+nav {
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.itemList{
+    margin: 10px 0px;
+}
+.productData {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .productData {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    align-items: center;
+
+}
+
+.searchBar span{
+    color:#4174aa;
+}
+
+.searchBar input{
+    width: 200px;
+    padding: 9px 4px;
+    border-radius: 3px;
+    border: none;
+    background-color: #74abca;
+}
+
