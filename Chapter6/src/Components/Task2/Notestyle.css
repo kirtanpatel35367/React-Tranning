@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff9900;
+    padding: 10px;
+}
+
+.navLink{
+    text-decoration: none;
+    padding: 0px 5px;
+    color: black;
+}
+
+.navLink:active{
+    border-bottom: 2px solid black;
+}
+
+.note-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.note-card {
+    width: 400px;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dd9c11;
+}
+
+.note-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.note-textarea:focus {
+    outline: none;
+    border-color: #e2a521;
+    box-shadow: 0 0 5px rgba(209, 137, 13, 0.5);
+}
+
+.save-btn {
+    padding: 10px 0px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #e4ba0e;
+}
+
+.note-card {
+    width: 350px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.note-content {
+    font-size: 18px;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.note-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.note-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.delete-button {
+    background-color: #ff9900;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #d38507;
+}
+
+.edit-button {
+    background-color: #ff9900;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #d38507;
+}
+
+
+/*NoteList*/
+.note{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.userLogin{
+    display: flex;
+    gap: 5px;
+}
+
+.userLogin svg{
+    font-size: large;
+    cursor: pointer;
+}
